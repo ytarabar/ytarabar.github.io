@@ -9,7 +9,7 @@ var Typer = {
   init: function () {
     accessCountimer = setInterval(function () {
       Typer.updLstChr();
-    }, 10);
+    }, 500);
     $.get(Typer.file, function (data) {
       Typer.text = data;
       Typer.text = Typer.text.slice(0, Typer.text.length - 1);
@@ -99,7 +99,7 @@ Typer.speed = 3;
 Typer.file = "website.html";
 Typer.init();
 
-var timer = setInterval("t();", 200);
+var timer = setInterval("t();", 30);
 function t() {
   Typer.addText({ keyCode: 123748 });
 
