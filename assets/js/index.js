@@ -95,11 +95,11 @@ function replaceUrls(text) {
   }
 }
 
-Typer.speed = 2;
+Typer.speed = 3;
 Typer.file = "website.html";
 Typer.init();
 
-var timer = setInterval("t();", 30);
+var timer = setInterval("t();", 50);
 function t() {
   Typer.addText({ keyCode: 123748 });
 
